@@ -2,13 +2,21 @@
 
 專案檔案結構解析
 traffic_intent_clf/
+
 ├── images/             ← 儲存所有行人圖片的資料夾
+
 │   ├── img1.jpg
+
 │   ├── img2.jpg
+
 │   └── ...
+
 ├── labels.csv          ← 圖片檔名及其對應意圖類別的標籤檔
+
 ├── extract_features.py ← 負責從圖片中提取特徵向量的腳本
+
 └── train_classifier.py ← 負責訓練 SVM 分類器並評估其性能的腳本
+
 
 labels.csv 檔案說明
 這個 CSV 檔案是整個專案的基礎，它定義了每張圖片的真實標籤 (Ground Truth Label)，也就是我們希望模型能夠學習辨識的行人意圖。
